@@ -4,65 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html">MoGo</a>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+    <div class="container">
+    <header class="header">
+        <a href="./index.html" class="logo">MoGo</a>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">About</a></li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Service</a></li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Work</a></li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Blog</a></li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h3>We work with</h3>
-        <h2>Amazing Services</h2>
-        <ul>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
-            <li><h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+    <main class="main">
+        <section class="services">
+        <h2 class="services-info">We work with</h2>
+        <h3 class="services-title">Amazing Services</h3>
+        <ul class="services-list">
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
+            <li class="services-list-item">
+                <h2 class="services-list-title">Photography</h2>
+            <p class="services-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></li>
         </ul>
-        <h3>Who we are</h3>
-        <h2>Meet our team</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </section>
+        <section class="team">
+        <h2 class="team-info">Who we are</h2>
+        <h3 class="team-title">Meet our team</h3>
+        <p class="team-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-         <ul>
-            <li>
-<img src="./img.MoGo/first-man.jpg" alt="first-man">
-<h4>Matthew Dix</h4>
-<p>Graphic Design</p>
+         <ul class="team-list">
+            <li class="team-list-item">
+<img src="./img.MoGo/first-man.jpg" alt="first-man" class="team-list-img">
+<h4 class="team-list-name">Matthew Dix</h4>
+<p class="team-list-position">Graphic Design</p>
             </li>
-            <li>
-<img src="./img.MoGo/second-man.jpg" alt="second-man">
-<h4>Christopher Campbell</h4>
-<p>Branding/UX design</p>
+            <li class="team-list-item">
+<img src="./img.MoGo/second-man.jpg" alt="second-man" class="team-list-img">
+<h4 class="team-list-name">Christopher Campbell</h4>
+<p class="team-list-position">Branding/UX design</p>
             </li>
-            <li>
- <img src="./img.MoGo/third-man.jpg" alt="third-man">
- <h4>Michael Fertig </h4>
- <p>Developer</p>
-            </li>
+            <li class="team-list-item">
+ <img src="./img.MoGo/third-man.jpg" alt="third-man" class="team-list-img">
+ <h4 class="team-list-name">Michael Fertig </h4>
+ <p class="team-list-position">Developer</p>
+            </li class="team-list-item">
          </ul>
+        </section>
     </main>
-    <footer>
-        <p>&copy;2016 MoGo free PSD template by <a href="#">Laaqiq</a>
-            <form>
-            <input type='text' name='email' placeholder="Your Email">
-            <button type="submit">Subscribe</button>
+    <footer class="footer">
+        <p class="footer-info">&copy;2016 MoGo free PSD template by 
+            <a href="#" class="footer-link">Laaqiq</a></p>
+            <form class="footer-form">
+            <input type='text' name='email' placeholder="Your Email..." class="footer-form-input">
+            <button type="submit" class="footer-form-btn">Subscribe</button>
         </form>
     </footer>
+</div>
 </body>
 </html>
