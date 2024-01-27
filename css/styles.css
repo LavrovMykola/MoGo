@@ -16,12 +16,12 @@ h2, h3, h4, ul, p, button{
     margin: 0;
 }
 body{
-color: var(--text);
-background-color: var(--background);
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
+    color: var(--text);
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
 }
 .container{
     width: 1230px;
@@ -37,31 +37,41 @@ header{
 }
 .logo{
     color: var(--main-accent);
-font-size: 30px;
-font-weight: 700;
+    font-size: 30px;
+    font-weight: 700;
 }
 .nav-list{
     display: flex;
     gap: 55px;
 }
 .nav-list-link{
-color: var(--main-accent);
-font-weight: 400;
+    color: var(--main-accent);
+    font-weight: 400;
+    position: relative;
+}
+.nav-list-link:hover::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--hover);
+    position: absolute;
+    top: 30px;
+    left: 0;
 }
 .nav-list-link:hover{
     color: var(--hover);
-    text-decoration: underline;
 }
 /* main ----------------------------------------------------*/
 .services{
     padding: 63px 0;
 }
 .services-list{
-display: flex;
-flex-wrap: wrap;
-column-gap: 126px;
-row-gap: 100px;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 126px;
+    row-gap: 100px;
+    justify-content: center;
 }
 .services-list-item{
     width: 275px;
@@ -70,22 +80,36 @@ justify-content: center;
     margin-bottom: 20px;
 }
 .services-title{
-    margin-bottom: 109px;
+    margin-bottom: 65px;
 }
 .services-info, .team-info{
     color: var(--title);
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
     font-size: 24px;
-text-align: center;
+    text-align: center;
 }
 .services-title, .team-title{
-color: var(--title);
-font-weight: 700;
-font-size: 30px;
-font-variant: all-small-caps;
-text-transform: uppercase;
-text-align: center;
+    color: var(--title);
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    text-transform: uppercase;
+    text-align: center;
+}
+.services-title::after, .team-title::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--hover);
+    margin: 0 auto;
+}
+.services-title::after{
+    margin-top: 40px;
+}
+.team-title::after {
+    margin-top: 36px;
 }
 .services-list-title{
     color: var(--title);
@@ -97,14 +121,13 @@ text-align: center;
 }
 .services-list-text{
     color: var(--text);
-font-size: 15px;
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-line-height: 1.47;
-text-align: center;
-
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.47;
+    text-align: center;
 }
-/* team */
+/* team ----------------------------------------------------*/
 .team{
         padding: 42px 0 80px;
 }
@@ -117,12 +140,12 @@ text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    margin: 85px 0 27px;
+    margin: 45px 0 27px;
 }
 .team-list{
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .team-list-item{
     width: 380px;
@@ -149,18 +172,18 @@ align-items: center;
 }
 .footer-info{
     color: var(--title);
-font-size: 14px;
-font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
 }
 .footer-link{
     color: var(--hover);
 }
 .footer-form-input{
-        width: 230px;
-        height: 39px;
-        font-family: 'Roboto', sans-serif;
-        border: 1px solid var(--text);
-        font-size: 14px;
+    width: 230px;
+    height: 39px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--text);
+    font-size: 14px;
     font-weight: 300;
     line-height: normal;
     font-style: italic;
