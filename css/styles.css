@@ -64,23 +64,33 @@ header{
 }
 /* main ----------------------------------------------------*/
 .services{
-    padding: 63px 0;
+    padding: 68px 0;
+}
+.svg-item{
+    fill: #95E1D3;
+    width: 47px;
+    height: 47px;
 }
 .services-list{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 126px;
+    /* column-gap: 70px; */
     row-gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .services-list-item{
-    width: 275px;
+    width: 316px;
+    display: flex;
+    gap: 20px;
 }
 .services-info{
     margin-bottom: 20px;
 }
 .services-title{
     margin-bottom: 65px;
+}
+.services-list-box{
+    max-width: 310px;
 }
 .services-info, .team-info{
     color: var(--title);
@@ -117,7 +127,6 @@ header{
      font-weight: 400;
      font-variant: small-caps;
      margin-bottom: 20px;
-     text-align: center;
 }
 .services-list-text{
     color: var(--text);
@@ -125,11 +134,10 @@ header{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.47;
-    text-align: center;
 }
 /* team ----------------------------------------------------*/
 .team{
-        padding: 42px 0 80px;
+    padding: 42px 0 80px;
 }
 .team-info{
     margin-bottom: 17px;
