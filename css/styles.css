@@ -1,212 +1,244 @@
-:root{
-    --main-accent:#95E1D3;
-    --hover:#F38181;
-    --title:#333333;
-    --text:#B6B6B6;
-    --background:#FFFFFF;
+:root {
+  --main-accent:#95E1D3;
+  --hover:#F38181;
+  --title:#333333;
+  --text:#B6B6B6;
+  --background:#FFFFFF;
 }
-a{
-    text-decoration: none;
+
+a {
+  text-decoration: none;
 }
-ul{
-    list-style-type: none;
+
+ul {
+  list-style-type: none;
 }
-h2, h3, h4, ul, p, button{
-    padding: 0;
-    margin: 0;
+
+h2, h3, h4, ul, p, button {
+  padding: 0;
+  margin: 0;
 }
-body{
-    color: var(--text);
-    background-color: var(--background);
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
-.container{
-    width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+
+.container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-/* header ----------------------------------------------------*/
-header{
-    padding: 17px 0 81px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+header {
+  padding: 17px 0 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    color: var(--main-accent);
-    font-size: 30px;
-    font-weight: 700;
+
+.logo {
+  color: var(--main-accent);
+  font-size: 30px;
+  font-weight: 700;
 }
-.nav-list{
-    display: flex;
-    gap: 55px;
+
+.nav-list {
+  display: flex;
+  gap: 55px;
 }
-.nav-list-link{
-    color: var(--main-accent);
-    font-weight: 400;
-    position: relative;
+
+.nav-list__link {
+  color: var(--main-accent);
+  font-weight: 400;
+  position: relative;
 }
-.nav-list-link:hover::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: var(--hover);
-    position: absolute;
-    top: 30px;
-    left: 0;
+
+.nav-list__link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--hover);
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
-.nav-list-link:hover{
-    color: var(--hover);
+
+.nav-list__link:hover {
+  color: var(--hover);
 }
-/* main ----------------------------------------------------*/
-.services{
-    padding: 68px 0;
+
+.services {
+  padding: 68px 0;
 }
-.svg-item{
-    fill: #95E1D3;
-    width: 47px;
-    height: 47px;
+
+.services-list__svg {
+  fill: #95E1D3;
+  width: 47px;
+  height: 47px;
 }
-.services-list{
-    display: flex;
-    flex-wrap: wrap;
-    /* column-gap: 70px; */
-    row-gap: 100px;
-    justify-content: space-between;
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content: space-between;
 }
-.services-list-item{
-    width: 316px;
-    display: flex;
-    gap: 20px;
+
+.services-list__item {
+  width: 316px;
+  display: flex;
+  gap: 20px;
 }
-.services-info{
-    margin-bottom: 20px;
+
+.services__info {
+  margin-bottom: 20px;
 }
-.services-title{
-    margin-bottom: 65px;
+
+.services__title {
+  margin-bottom: 65px;
 }
-.services-list-box{
-    max-width: 310px;
+
+.services-list__box {
+  max-width: 310px;
 }
-.services-info, .team-info{
-    color: var(--title);
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
+
+.services__info, .team__info {
+  color: var(--title);
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
 }
-.services-title, .team-title{
-    color: var(--title);
-    font-weight: 700;
-    font-size: 30px;
-    font-variant: all-small-caps;
-    text-transform: uppercase;
-    text-align: center;
+
+.services__title, .team__title {
+  color: var(--title);
+  font-weight: 700;
+  font-size: 30px;
+  font-variant: all-small-caps;
+  text-transform: uppercase;
+  text-align: center;
 }
-.services-title::after, .team-title::after{
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: var(--hover);
-    margin: 0 auto;
+
+.services__title::after, .team__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--hover);
+  margin: 0 auto;
 }
-.services-title::after{
-    margin-top: 40px;
+
+.services__title::after {
+  margin-top: 40px;
 }
-.team-title::after {
-    margin-top: 36px;
+
+.team__title::after {
+  margin-top: 36px;
 }
-.services-list-title{
-    color: var(--title);
-     font-size: 14px;
-     font-weight: 400;
-     font-variant: small-caps;
-     margin-bottom: 20px;
+
+.services-list__title {
+  color: var(--title);
+  font-size: 14px;
+  font-weight: 400;
+  font-variant: small-caps;
+  margin-bottom: 20px;
 }
-.services-list-text{
-    color: var(--text);
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 1.47;
+
+.services-list__text {
+  color: var(--text);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.47;
 }
-/* team ----------------------------------------------------*/
-.team{
-    padding: 42px 0 80px;
+
+.team {
+  padding: 42px 0 80px;
 }
-.team-info{
-    margin-bottom: 17px;
+
+.team__info {
+  margin-bottom: 17px;
 }
-.team-descr{
-    color: var(--text);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 45px 0 27px;
+
+.team__descr {
+  color: var(--text);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 45px 0 27px;
 }
-.team-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.team-list-item{
-    width: 380px;
+
+.team-list__item {
+  width: 380px;
 }
-.team-list-name{
-    color: var(--title);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    font-variant: all-small-caps;
-    margin: 30px 0 11px 0 ;
+
+.team-list__name {
+  color: var(--title);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  margin: 30px 0 11px 0;
 }
-.team-list-position{
-    color: var(--text);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    font-weight: 300;
+
+.team-list__position {
+  color: var(--text);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
 }
-/* footer ---------------------------------------------------- */
-.footer{
-    padding: 9px 10px 11px;
+
+.footer {
+  padding: 9px 10px 11px;
 }
-.footer-info{
-    color: var(--title);
-    font-size: 14px;
-    font-weight: 400;
+
+.footer__info {
+  color: var(--title);
+  font-size: 14px;
+  font-weight: 400;
 }
-.footer-link{
-    color: var(--hover);
+
+.footer__link {
+  color: var(--hover);
 }
-.footer-form-input{
-    width: 230px;
-    height: 39px;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid var(--text);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: normal;
-    font-style: italic;
-    padding: 12px 145px 11px 10px;
+
+.footer-form__input {
+  width: 230px;
+  height: 39px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--text);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: italic;
+  padding: 12px 145px 11px 10px;
 }
-.footer-form-btn{
-    width: 150px;
-    height: 50px;
-    background-color: var(--main-accent);
-    color: var(--background);
-    font-family: 'Monserat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    text-align: center;
-    border: none;
-    font-variant: all-small-caps;
-}
+
+.footer-form__btn {
+  width: 150px;
+  height: 50px;
+  background-color: var(--main-accent);
+  color: var(--background);
+  font-family: "Monserat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  border: none;
+  font-variant: all-small-caps;
+}/*# sourceMappingURL=styles.css.map */

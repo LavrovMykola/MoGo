@@ -1,0 +1,109 @@
+.services{
+    padding: 68px 0;
+}
+.services-list__svg{
+    fill: #95E1D3;
+    width: 47px;
+    height: 47px;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    justify-content: space-between;
+}
+.services-list__item{
+    width: 316px;
+    display: flex;
+    gap: 20px;
+}
+.services__info{
+    margin-bottom: 20px;
+}
+.services__title{
+    margin-bottom: 65px;
+}
+.services-list__box{
+    max-width: 310px;
+}
+.services__info, .team__info{
+    color: var(--title);
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.services__title, .team__title{
+    color: var(--title);
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    text-transform: uppercase;
+    text-align: center;
+}
+.services__title::after, .team__title::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--hover);
+    margin: 0 auto;
+}
+.services__title::after{
+    margin-top: 40px;
+}
+.team__title::after {
+    margin-top: 36px;
+}
+.services-list__title{
+    color: var(--title);
+     font-size: 14px;
+     font-weight: 400;
+     font-variant: small-caps;
+     margin-bottom: 20px;
+}
+.services-list__text{
+    color: var(--text);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.47;
+}
+.team{
+    padding: 42px 0 80px;
+}
+.team__info{
+    margin-bottom: 17px;
+}
+.team__descr{
+    color: var(--text);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 45px 0 27px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team-list__item{
+    width: 380px;
+}
+.team-list__name{
+    color: var(--title);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-variant: all-small-caps;
+    margin: 30px 0 11px 0 ;
+}
+.team-list__position{
+    color: var(--text);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+}

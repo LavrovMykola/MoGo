@@ -1,0 +1,35 @@
+.footer{
+    padding: 9px 10px 11px;
+}
+.footer__info{
+    color: var(--title);
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer__link{
+    color: var(--hover);
+}
+.footer-form__input{
+    width: 230px;
+    height: 39px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--text);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    font-style: italic;
+    padding: 12px 145px 11px 10px;
+}
+.footer-form__btn{
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-accent);
+    color: var(--background);
+    font-family: 'Monserat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    border: none;
+    font-variant: all-small-caps;
+}
